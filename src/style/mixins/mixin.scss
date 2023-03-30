@@ -1,0 +1,14 @@
+// MIXINS
+
+@mixin flexRowSpaceBtwn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexRowCenterGap ($gap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}

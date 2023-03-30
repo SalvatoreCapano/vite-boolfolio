@@ -1,0 +1,22 @@
+<script>
+
+export default {
+  name: 'AppRegister',
+}
+</script>
+
+<template>
+  <div class="container">
+    REGISTER
+  </div>
+</template>
+
+<style lang="scss" scoped>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+  }
+</style>

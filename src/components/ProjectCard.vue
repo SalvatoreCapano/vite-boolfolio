@@ -17,6 +17,11 @@ export default {
     <h2 class="cardTitle">{{ this.project.title }}</h2>
     <!-- <p class="cardDescription">{{ this.project.description }}</p> -->
     <span class="cardStatus">Status: {{ this.project.status }}</span>
+    <button class="btn">
+      <router-link :to="{ name:'projectShow', params: { slug: this.project.slug } }">
+        dettagli
+      </router-link>
+    </button>
   </div>
 </template>
 
@@ -54,6 +59,11 @@ export default {
     
     &:hover {
       background-color: #404040;
+    }
+
+    button {
+      text-transform: capitalize;
+      padding: 2px 4px;
     }
   }
 </style>
